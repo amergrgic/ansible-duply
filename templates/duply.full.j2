@@ -1,0 +1,5 @@
+#!/bin/sh
+
+test -x $(which duply) || exit 0
+
+$(which duply) {{ duply_profile }} full
